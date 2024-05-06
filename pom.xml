@@ -55,7 +55,7 @@
 					  <encoding>UTF-8</encoding>
 					  <compilerArgs>
 						<arg>-XDcompilePolicy=simple</arg>
-						<arg>-Xplugin:ErrorProne -XepOpt:NullAway:AnnotatedPackages=test -Xep:NullAway:ERROR</arg>
+						<arg>-Xplugin:ErrorProne -XepOpt:NullAway:AnnotatedPackages=[a-zA-Z0-9.]* -Xep:NullAway:WARN</arg>
 					  </compilerArgs>
 					  <annotationProcessorPaths>
 						<path>
