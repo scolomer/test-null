@@ -1,16 +1,15 @@
 package test;
 
 import java.util.ArrayList;
-import javax.annotation.ParametersAreNonnullByDefault;
-import test.test2.Test12;
+import javax.annotation.Nullable;
 
-@ParametersAreNonnullByDefault
 public class Test {
 
-  public static void test(Test12 test) {}
+  public static void test(Integer i) {
+    System.out.println(i);
+  }
 
   public static void main(String[] args) {
-    //   var lst = new Test12();
     test(null);
   }
 }
