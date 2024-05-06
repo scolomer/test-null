@@ -45,6 +45,19 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>com.github.spotbugs</groupId>
+				<artifactId>spotbugs-maven-plugin</artifactId>
+				<version>4.8.5.0</version>
+				<dependencies>
+				  <!-- overwrite dependency on spotbugs if you want to specify the version of spotbugs -->
+				  <dependency>
+					<groupId>com.github.spotbugs</groupId>
+					<artifactId>spotbugs</artifactId>
+					<version>4.8.5</version>
+				  </dependency>
+				</dependencies>
+			  </plugin>
 		</plugins>
 	</build>
 
@@ -89,6 +102,10 @@
 			<artifactId>jsr305</artifactId>
 			<version>3.0.2</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.jetbrains</groupId>
+			<artifactId>annotations</artifactId>
+			<version>24.1.0</version>
+		</dependency>
 	</dependencies>
 </project>
